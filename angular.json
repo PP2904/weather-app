@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "37a13a79-a920-4e53-a8d3-6dcadcd4dd6d"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -91,10 +94,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
-          }
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+          ]}
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
